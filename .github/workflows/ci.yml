@@ -9,34 +9,34 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 📥 Get your code
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # ☕ Setup Java (for backend)
+      # Java backend
       - name: Set up Java
         uses: actions/setup-java@v3
         with:
           distribution: temurin
           java-version: 17
 
-      # 🔨 Build backend
       - name: Build backend
-        working-directory: backend
-        run: mvn clean package
+        run: |
+          cd ./backend
+          mvn clean package
 
-      # 🟢 Setup Node (for frontend)
+      # Node frontend
       - name: Set up Node
         uses: actions/setup-node@v3
         with:
           node-version: 18
 
-      # 📦 Install frontend dependencies
       - name: Install frontend dependencies
-        working-directory: frontend
-        run: npm install
+        run: |
+          cd ./frontend
+          ls   # debug (important)
+          npm install
 
-      # 🏗️ Build frontend
       - name: Build frontend
-        working-directory: frontend
-        run: npm run build
+        run: |
+          cd ./frontend
+          npm run build
