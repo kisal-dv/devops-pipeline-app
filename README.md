@@ -226,13 +226,20 @@ Updated workflow configuration and corrected project directory structure.
 # 📷 Screenshots
 
 ## Frontend UI
-![Frontend UI](screenshots/frontend ui.jpg)
+
+![Frontend UI](screenshots/frontend-ui.jpg)
+
+---
 
 ## GitHub Actions Pipeline
-![GitHub Actions](screenshots/github actions.jpg)
+
+![GitHub Actions](screenshots/github-actions.jpg)
+
+---
 
 ## Railway Deployment
-![Railway Deployment](screenshots/railway deployment.jpg)
+
+![Railway Deployment](screenshots/railway-deployment.jpg)
 
 ---
 
